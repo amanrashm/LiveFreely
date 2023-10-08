@@ -1,10 +1,12 @@
 package com.liveFreely.Application.Repositories;
 
 import com.liveFreely.Application.Entity.AudioRecording;
-import org.springframework.stereotype.Repository;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Repository;
 
-import jakarta.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import java.util.Date;
 import java.util.List;
 

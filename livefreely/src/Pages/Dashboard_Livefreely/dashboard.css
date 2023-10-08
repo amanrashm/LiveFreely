@@ -1,0 +1,41 @@
+/* Add your CSS styles here */
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.col-md-6 {
+    padding: 0 15px;
+}
+
+/* You can customize the styles further based on your design preferences */

@@ -1,6 +1,7 @@
 package com.liveFreely.Application.Entity;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "subscription_plan") // Specify the table name if it's different from the class name

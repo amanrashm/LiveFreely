@@ -1,0 +1,31 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import CorporateLogin from './Pages/Corporate_Login/login';
+import CorporateLogout from './Pages/Corporate_Logout/logout';
+import IndividualLogin from './Pages/Indivisual_Login/login';
+import IndividualLogout from './Pages/Indivisual_Logout/logout';
+import Dashboard from './Pages/Dashboard_Livefreely/dashboard';
+import CorporateRegister from './Pages/Corporate_Register/Corporate_Register';
+import IndividualRegister from './Pages/Indivisual_Register/Indivisual_Register';
+import SubscriptionPlans from './Pages/Subscription_Plans/Subscription_plans'; // Corrected import
+
+function App() {
+    return (
+        <Router>
+            <div>
+                <Switch>
+                    <Route path="/corporate/login" exact component={CorporateLogin} />
+                    <Route path="/corporate/logout" exact component={CorporateLogout} />
+                    <Route path="/individual/login" exact component={IndividualLogin} />
+                    <Route path="/individual/logout" exact component={IndividualLogout} />
+                    <Route path="/dashboard" exact component={Dashboard} />
+                    <Route path="/corporate/register" exact component={CorporateRegister} />
+                    <Route path="/individual/register" exact component={IndividualRegister} />
+                    <Route path="/subscription-plans" exact component={SubscriptionPlans} /> {/* Corrected path */}
+                </Switch>
+            </div>
+        </Router>
+    );
+}
+
+export default App;

@@ -1,6 +1,7 @@
 package com.liveFreely.Application.Entity;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "user_login_request") // Specify the table name explicitly

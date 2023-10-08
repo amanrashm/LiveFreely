@@ -1,6 +1,7 @@
 package com.liveFreely.Application.Entity;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 import lombok.Getter;
 
 @Getter

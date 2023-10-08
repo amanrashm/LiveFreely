@@ -1,10 +1,7 @@
 
 package com.liveFreely.Application.Entity;
 
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -15,6 +12,8 @@ public class AudioRecording {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @lombok.Setter
+    @lombok.Getter
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserEntity user;
@@ -45,14 +44,6 @@ public class AudioRecording {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public UserEntity getUser() {
-        return user;
-    }
-
-    public void setUser(UserEntity user) {
-        this.user = user;
     }
 
     public Date getRecordingDate() {
