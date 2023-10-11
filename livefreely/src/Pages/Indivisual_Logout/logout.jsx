@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./logout.css";
 function Indivisual_Logout() {
     const handleLogout = () => {
         // Make a POST request to the logout URL

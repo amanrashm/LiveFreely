@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./login.css";
+
 
 function Corporate_Login() {
     const [username, setUsername] = useState('');

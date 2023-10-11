@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "./Corporate_Register.css";
 function Corporate_Register() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -22,7 +22,7 @@ function Corporate_Register() {
         };
 
         // Send the registration data to the backend API
-        fetch('/auth/register', {
+        fetch('/auth1/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

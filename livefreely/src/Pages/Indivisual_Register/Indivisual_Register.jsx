@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "./Indivisual_Register.css";
 function Indivisual_Register() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');

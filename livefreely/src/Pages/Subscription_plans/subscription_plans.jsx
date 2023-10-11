@@ -1,6 +1,6 @@
 import React from 'react';
-
-function Subscription_Plans() {
+import "./subscriptionplan.css";
+function subscription_Plans() {
     return (
         <div className="container mt-5">
             <h1 className="mb-4">Subscription Plans</h1>
@@ -9,4 +9,4 @@ function Subscription_Plans() {
     );
 }
 
-export default Subscription_Plans;
+export default subscription_Plans;
